@@ -1,0 +1,105 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "apiMovies22",
+    "dateExported": "2024-02-26T01:03:49.947Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b0e22b4d-f207-44eb-978c-534b4ac49b4d",
+            "name": "movies",
+            "containerId": "",
+            "created": "2024-02-25T19:05:48.296Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bdd97708-b1f8-4a74-9a33-fba43d821fb0",
+            "colId": "8758af83-708d-4263-ad34-90aa9c4e6f4b",
+            "containerId": "b0e22b4d-f207-44eb-978c-534b4ac49b4d",
+            "name": "Movies | All",
+            "url": "{{URL_base}}/api/movies",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-25T19:07:01.788Z",
+            "modified": "2024-02-25T19:33:01.863Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a011a598-54ba-4fac-ba9e-f0558f15e14f",
+            "colId": "8758af83-708d-4263-ad34-90aa9c4e6f4b",
+            "containerId": "b0e22b4d-f207-44eb-978c-534b4ac49b4d",
+            "name": "Movies | Show",
+            "url": "http://localhost:3001/api/movies/e",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-25T19:08:32.004Z",
+            "modified": "2024-02-25T19:58:59.532Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1af5e7d5-6b08-4f3d-8f51-bf3fe4afd7ab",
+            "colId": "8758af83-708d-4263-ad34-90aa9c4e6f4b",
+            "containerId": "b0e22b4d-f207-44eb-978c-534b4ac49b4d",
+            "name": "Movies | Create",
+            "url": "http://localhost:3001/api/movies",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-25T19:13:46.224Z",
+            "modified": "2024-02-26T00:26:19.705Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"Meteoro\",\n  \"rating\" : 3,\n  \"awards\" : 1,\n  \"release_date\" : \"2000-9-9\",\n  \"length\" : 100,\n  \"genre_id\" : 3\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6fed05cc-2051-4899-bcaa-25e90a4be2ea",
+            "colId": "8758af83-708d-4263-ad34-90aa9c4e6f4b",
+            "containerId": "b0e22b4d-f207-44eb-978c-534b4ac49b4d",
+            "name": "Movies | Update",
+            "url": "{{URL_base}}/api/movies/5",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-25T20:20:46.343Z",
+            "modified": "2024-02-26T00:23:46.475Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"Meteoro 2\",\n  \"rating\" : 3,\n  \"awards\" : 1,\n  \"release_date\" : \"2020-9-9\",\n  \"length\" : 60,\n  \"genre_id\" : 4\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "71521859-b1b5-4040-b87c-68f63c2c1f91",
+            "colId": "8758af83-708d-4263-ad34-90aa9c4e6f4b",
+            "containerId": "b0e22b4d-f207-44eb-978c-534b4ac49b4d",
+            "name": "Movies | Destroy",
+            "url": "{{URL_base}}/api/movies/32",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-02-26T00:38:36.962Z",
+            "modified": "2024-02-26T00:47:05.722Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" : \"Meteoro 2\",\n  \"rating\" : 3,\n  \"awards\" : 1,\n  \"release_date\" : \"2020-9-9\",\n  \"length\" : 60,\n  \"genre_id\" : 4\n  \n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "envId": "b7b59a26-bbb4-4282-934d-c735870b2915"
+    }
+}
